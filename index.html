@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+</head>
+<body>
+	<form action="get">
+
+		<div class="username">
+			<label for="">您的姓名：</label>
+			<div class="cc_item">
+				<input type="text" value="username" name="username" placeholder="请输入您的姓名">
+			</div>
+		</div>
+		<div class="password">
+			<label for="">您的密码：</label>
+			<div class="cc_item">
+				<input type="password" value="password" name="password" placeholder="请输入您的密码">
+			</div>
+		</div>
+
+<!-- 单选		 -->
+		<div class="hobby">
+			<label for="">爱好</label><br>
+			<input type="radio" name="hobby" value="看书">看书
+			<input type="radio" name="hobby" value="爬山" checked/>爬山
+			<input type="radio" name="hobby" value="旅游">旅游
+			<input type="radio" name="travl" value="丽江">丽江
+			<input type="radio" name="travl" value="四川">四川
+			<input type="radio" name="travl" value="恩施">恩施
+		</div>
+
+<!-- 多选 -->
+		<div class="like02">
+			<label for="">喜好</label><br>
+			<input type="checkbox" name="like02" value="刷微博">刷微博
+			<input type="checkbox" name="like02" value="看抖音" checked/>看抖音
+			<input type="checkbox" name="like02" value="看相声">看相声
+		</div>
+<!-- 下拉选项		 -->
+		<div class="eat">
+			<label for="">小吃</label><br>
+			<select>
+				<option value="糖葫芦">糖葫芦</option>
+				<option value="周黑鸭">周黑鸭</option>
+				<option value="煎饼果子">煎饼果子</option>
+				<option value="串串">串串</option>
+			</select>
+		</div>
+		<textarea cols="20" rows="10">
+			抓紧学习哈哈哈，加油！！！
+		</textarea>
+
+<!-- 暂存信息 -->
+		<input type="hidden" value="hidden"> <!-- 作用用于暂存一些信息 ,s使用安全远离的时候使用这个-->
+
+<!-- 提交按钮 -->
+		<input type="button" value="submit"><!--不可提交-->
+		<input type="submit" value="submit"><!--可提交-->
+		<input type="reset" value="reset">
+	</form>
+</body>
+</html>
